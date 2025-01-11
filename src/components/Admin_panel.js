@@ -90,6 +90,7 @@ const Admin_panel = () => {
     return (
         <>
             <div className="admin-panel">
+            <h1 className="copyRight">Yogesh <small><sub>consept demo project</sub></small> </h1>
                 <div className="head">
                     <nav>
                         <ul>

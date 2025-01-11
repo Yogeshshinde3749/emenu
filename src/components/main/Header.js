@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <>
             <header>
-                <h1>Yogesh <small><sub>consept demo project</sub></small> </h1>
+                <h1>Yogesh</h1>
                 <nav>
                     <Link to="/" onClick={handleActive} className="active">Menu</Link>
                     <Link to="/cart" onClick={handleActive}>Cart <div>{data.length}</div></Link>
