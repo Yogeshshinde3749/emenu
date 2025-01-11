@@ -20,7 +20,7 @@ const Admin_panel = () => {
     // Add Dish Handler
     const dishAddHandler = () => {
 
-        if (dname.current.value == "" || dprice.current.value == "" || dtype.current.value == "") {
+        if (dname.current.value === "" || dprice.current.value === "" || dtype.current.value === "") {
             alert("fill the form")
         }
 
@@ -106,7 +106,7 @@ const Admin_panel = () => {
                     </nav>
                 </div>
                 <div className="form card">
-                    {getOption === "Dish" ? (
+                    {getOption == "Dish" ? (
                         <table>
                             <tbody>
                                 <tr>
