@@ -106,7 +106,7 @@ const Admin_panel = () => {
                     </nav>
                 </div>
                 <div className="form card">
-                    {getOption == "Dish" ? (
+                    {getOption === "Dish" ? (
                         <table>
                             <tbody>
                                 <tr>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const CartProduct = ({ name, price, quantity, id, setCartData }) => {
     const named = useRef(null);

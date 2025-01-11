@@ -41,7 +41,7 @@ const Menu = () => {
         }
     };
     const handleVarity = () => {
-        if(display == "block"){
+        if(display === "block"){
             setDisplay("none")
         }
         else{
