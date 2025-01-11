@@ -1,0 +1,464 @@
+/*********************************** Global ***************************************/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s linear;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pt-2 {
+  padding-top: 30px;
+}
+
+.pt-3 {
+  padding-top: 45px !important;
+}
+
+.pt-4 {
+  padding-top: 60px !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/*********************************** Global ***************************************/
+
+
+/*********************************** header ***************************************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+  padding: 5px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  h1 {
+    font-size: 22px;
+    padding: 0 5px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    a {
+      padding: 6px 10px;
+      background: rgba(128, 128, 128, 0);
+      border-radius: 5px;
+      color: white;
+      text-decoration: none !important;
+      position: relative;
+
+      div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: yellow !important;
+        color: black;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+
+    .active {
+      background: rgba(0, 0, 0, 0.377);
+    }
+  }
+}
+
+/*********************************** header ***************************************/
+
+
+/************************************ menu ***************************************/
+
+.food-menu-body {
+  .varity-sm-btn {
+    display: none;
+    z-index: 50;
+    position: absolute;
+    top: 41px;
+    background-color: transparent;
+    right: 0;
+    backdrop-filter: blur(20px);
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .varity {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      padding: 5px 15px;
+    }
+  }
+
+  .sizeBtn {
+    padding: 0px 15px;
+    width: 100px;
+    display: flex;
+    position: absolute;
+    top: 41px;
+    left: -15 px;
+    button{
+      display: none;
+    }
+  }
+
+  button {
+    padding: 5px 15px;
+  }
+
+}
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none;
+}
+
+
+
+
+
+/************************************ menu ***************************************/
+
+
+/********************************** products *************************************/
+
+
+.product {
+  background-color: #808080;
+  width: 100% !important;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+  .inner {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    img {
+      display: block;
+      width: 100% !important;
+      height: 120px !important;
+      background-color: rgba(255, 255, 255, 0.461);
+      border-radius: 10px;
+    }
+
+    .detail {
+      th {
+        text-align: start;
+        font-size: 14px;
+      }
+
+      td {
+        button {
+          padding: 0px 4px;
+          border-radius: 5px;
+          border: 0px;
+        }
+      }
+    }
+  }
+}
+
+.menuSm {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-evenly;
+  padding: 20px 0;
+
+  .product {
+    width: 45% !important;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .product {
+    th {
+      text-align: start;
+      font-size: 14px;
+    }
+
+    td {
+      button {
+        width: 100%;
+      }
+    }
+
+    .detail {
+      font-size: 12px;
+    }
+
+    .inner {
+      padding: 0;
+    }
+  }
+}
+
+
+
+
+/********************************** products *************************************/
+
+/******************************** cart-product ***********************************/
+
+.cart-product {
+  width: 92%;
+  margin: auto;
+  position: relative;
+
+  .delBtn {
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 0;
+    color: white;
+    background-color: rgb(129, 11, 11);
+  }
+
+  .inner {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #808080;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+
+    img {
+      display: block;
+      width: 100px !important;
+      height: 100px !important;
+      background-color: rgba(0, 0, 0, 0.61);
+      border-radius: 10px;
+    }
+
+    table {
+      font-size: 15px;
+
+      th {
+        text-align: start;
+      }
+    }
+  }
+}
+
+/******************************** cart-product ***********************************/
+
+
+/************************************ order ***************************************/
+
+.order {
+
+  table,
+  td,
+  th {
+    border: 5px solid white;
+    background-color: #808080;
+    border-collapse: collapse;
+    text-align: start;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  table {
+    width: 90%;
+    margin: 10px auto 0 auto;
+  }
+}
+
+
+/*******************************^^^^* order ***************************************/
+
+
+/********************************* Admin Panel ***********************************/
+
+
+.admin-panel {
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+
+  .head {
+    position: absolute;
+    left: 0px;
+    width: 15%;
+    height: calc(100vh - 41px) !important;
+    background-color: rgba(0, 0, 0, 0.212);
+
+    nav {
+      list-style-type: none;
+      text-align: center;
+
+      li {
+        padding: 10px 0;
+      }
+
+      .active {
+        background-color: grey;
+      }
+
+    }
+  }
+
+  .form {
+    position: absolute;
+    right: 0px;
+    width: 85%;
+  }
+  .card{
+    table{
+      width: 96%;
+      margin: 15px auto;
+      background-color: #80808025;
+      border-radius: 5px;
+      padding: 15px 10px;
+      th{
+        text-align: start;
+        padding: 4px 20px 4px 20px;
+        display: flex;
+        justify-content: space-between;
+        button{
+          padding: 5px 15px;
+          margin: 10px 0;
+        }
+      }
+      td{
+        input{
+          background-color: #80808013;
+        }
+      }
+    }
+  }
+}
+
+/********************************* Admin Panel ***********************************/
+
+
+/********************************* Media Query ***********************************/
+
+
+@media only screen and (min-width: 360px) {
+  .product {
+    width: calc(50% - 25px) !important;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .product {
+    width: calc(33.33% - 25px) !important;
+  }
+
+}
+
+@media only screen and (min-width: 1080px) {
+  .product {
+    width: calc(25% - 25px) !important;
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .food-menu-body {
+    position: relative;
+    .sizeBtn {
+      button {
+        display: block !important;
+      }
+    }
+
+    .varity-section {
+      .varity-sm-btn {
+        display: block !important;
+      }
+
+      .varity {
+        display: none;
+      }
+
+      
+
+      .mobile-var {
+        position: absolute !important;
+        top: 41px;
+        background-color: #808080;
+        width: 100%;
+        transition: 0.8s all linear;
+        list-style: none;
+        box-sizing: border-box;
+
+        li:nth-child(1) {
+          background-color: rgb(165 42 42 / 90%);
+        }
+
+        li {
+          padding: 5px 0px;
+          text-align: center;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  header {
+    nav {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    h1 {
+      display: none;
+    }
+  }
+}
+
+
+/********************************* Media Query ***********************************/
